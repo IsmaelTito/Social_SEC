@@ -4,7 +4,7 @@ import numpy as np
 from gym.envs.registration import register
 
 sys.path.append('../exps')
-from exp_setup_soccer import id_generator, run_experiment
+from exp_setup import id_generator, run_experiment
 print(sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__) ) ) ))
 
 #################################################################################################################
