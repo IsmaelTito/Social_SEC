@@ -7,7 +7,7 @@ import pickle as pkl
     Parent Contextual Layer class implementing the Sequential Episodic Control (SEC) algorithm
 '''
 
-class ContextualLayer_SEC_classic(object):
+class ContextualLayer_SEC(object):
 
     def __init__(self, action_space=4,
                  stm=50, ltm=500, pl=20, forget="NONE",

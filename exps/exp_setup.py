@@ -11,7 +11,7 @@ args = parser.parse_args()
 
 sys.path.append('../agents')
 
-from dac_agents import AgentReactive, AgentGridworld_SEC
+from agents import AgentReactive, AgentGridworld_SEC
 
 from matplotlib import pylab as plt
 

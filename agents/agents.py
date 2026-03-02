@@ -4,7 +4,7 @@ import sys
 sys.path.append('../layers/')
 
 from reactive_layer import ReactiveLayer_Double
-from contextual_layer_SEC_classic import ContextualLayer_SEC_classic
+from contextual_layer_SEC import ContextualLayer_SEC
 
 
 class AgentReactive(object):
@@ -32,7 +32,7 @@ class AgentGridworld_SEC(AgentReactive):
     def __init__(self, act_sp, env_n, train_len=1000, p_len=20, stm_len=50, ltm_len=500, seq_bias=True, frgt='FIFO', load_ltm=False,
         transf_cldwn=25, transf_type='PROP'):
         super().__init__(act_sp, env_n)
-        self.CL = ContextualLayer_SEC_classic(action_space=act_sp, pl=p_len, stm=stm_len, ltm=ltm_len,
+        self.CL = ContextualLayer_SEC(action_space=act_sp, pl=p_len, stm=stm_len, ltm=ltm_len,
             forget=frgt, sequential_bias=seq_bias, load_ltm=load_ltm)
 
         self.previous_couplet = np.array([np.zeros(p_len), np.random.choice(self.action_space)], dtype=object)
