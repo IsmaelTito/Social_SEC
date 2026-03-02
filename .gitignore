@@ -1,0 +1,12 @@
+**/__pycache__
+**/.ipynb_checkpoints
+**/UnitySDK.log
+**/env_imgs
+**/results
+**/saved_data/pybox2d
+**/saved_data/multigrid
+**/saved_data/animalai_v3
+**/saved_data/animalai_v1
+**/saved_data/atari/LTMs
+**/saved_data/atari/env_imgs
+**/saved_data/atari/results
